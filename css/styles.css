@@ -36,6 +36,18 @@ a {
 .cards-text {
     padding: 32px 0;
 }
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: inset(100%);
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
 /*header*/
 
 .header {
@@ -51,7 +63,11 @@ a {
     display: flex;
     align-items: center;
 }
-
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
 .logo {
     font-weight: 700;
     font-size: 18px;
@@ -65,40 +81,8 @@ a {
     padding: 24px 0;
     margin-right: 76px;
 }
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip-path: inset(100%);
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
-}
-
-.nav-list {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-}
-.contacts {
-    font-style: normal;
-    margin-left: auto;
-}
-.contacts-link {
-    display: block;
-    padding: 24px 0;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
-}
-.contacts-list {
-    display: flex;
-    align-items: center;
-    gap: 40px;
+.header-logo .logo-accent {
+    color: #2e2f42;
 }
 .nav-link {
     display: block;
@@ -113,21 +97,35 @@ a {
 .nav-link:focus {
     color: #404bbf;
 }
+.contacts {
+    font-style: normal;
+    margin-left: auto;
+}
+.contacts-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.contacts-link {
+    display: block;
+    padding: 24px 0;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
 .contacts-link:hover,
 .contacts-link:focus {
     color: #404bbf;
 }
-
-.header-logo .logo-accent {
-    color: #2e2f42;
-}
+/* hero-section */
 
 .start-page {
     background-color: #2e2f42;
     padding: 188px 0;
     text-align: center;
-    
 }
+
 .start-name {
     max-width: 496px;
     margin: 0 auto;
@@ -164,6 +162,9 @@ a {
 .start-button:focus {
     background-color: #404BBF;
 }
+
+/* Features section */
+
 .features-subtitle {
     font-weight: 500;
     font-size: 20px;
@@ -180,6 +181,8 @@ a {
     line-height: 1.5;
     
 }
+/* Team section */
+
 .team-header {
     font-weight: 700;
     font-size: 36px;
@@ -222,14 +225,13 @@ a {
     letter-spacing: 0.02em;
     color: #434455
 }
-.cards-text {
-    padding: 32px 16px;
-}
+/* Portfolio section */
+
 .portfolio-section {
     padding: 120px 0;
 }
 
-.project-header {
+.portfolio-section .project-header {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -238,8 +240,21 @@ a {
     color: #2e2f42;
     text-transform: capitalize;
     margin-bottom: 72px;
-
-    
+}
+.project-list {
+    gap: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 48px;
+}
+.portfolio-cards {
+    width: calc((100% - 48px) / 3);
+}
+.portfolio-cards .cards-text {
+    border-bottom: 1px solid #e7e9fc;
+    border-left: 1px solid #e7e9fc;
+    border-right: 1px solid #e7e9fc;
+    padding: 32px 16px;
 }
 .portfolio-cards .project-title {
     font-weight: 500;
@@ -249,27 +264,16 @@ a {
     color: #2e2f42;
     margin-bottom: 8px;
 }
-.project-list {
-    gap: 24px;
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 48px;
-}
+
 .project-text {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
-.portfolio-cards .cards-text {
-    border-bottom: 1px solid #e7e9fc;
-    border-left: 1px solid #e7e9fc;
-    border-right: 1px solid #e7e9fc;
-    padding: 32px 16px;
-}
-.portfolio-cards {
-    width: calc((100% - 48px) / 3);
-}
+
+/* Footer */
+
 .footer-logo {
     display: inline-block;
     margin-bottom: 16px;
