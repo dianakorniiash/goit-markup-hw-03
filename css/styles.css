@@ -225,7 +225,7 @@ a {
 .team-text {
     padding: 32px 16px;
 }
-.portfolio {
+.portfolio-section {
     padding: 120px 0;
 }
 
@@ -241,7 +241,7 @@ a {
 
     
 }
-.project-title {
+.portfolio-cards .project-title {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
