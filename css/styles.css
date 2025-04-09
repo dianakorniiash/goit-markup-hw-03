@@ -17,6 +17,9 @@ ol {
     margin: 0;
     padding-left: 0;
 }
+img {
+    display: block;
+}
 h1, h2, h3, h4, h5, h6, p {
     margin: 0;
 }
@@ -30,7 +33,9 @@ a {
     padding: 0 15px;
     margin: 0 auto;
 }
-
+.team-text {
+    padding: 32px 0;
+}
 /*header*/
 
 .header {
@@ -208,7 +213,7 @@ a {
 .team-list {
     background-color: #ffffff;
     display: flex;
-    gap: 32px;
+    gap: 24px;
 }
 .team-role {
     font-weight: 400;
@@ -291,6 +296,9 @@ a {
     gap: 24px;
     margin: 120px 0;
 }
+.features {
+    padding: 120px 0;
+}
 .features-item {
-
+    width: calc((100% - 72px) / 4);
 }
