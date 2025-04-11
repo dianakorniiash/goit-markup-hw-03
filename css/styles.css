@@ -214,7 +214,6 @@ a {
     margin-bottom: 8px;
 }
 .team-list {
-    background-color: #ffffff;
     display: flex;
     gap: 24px;
 }
@@ -298,7 +297,6 @@ a {
     display: flex;
     align-items: center;
     gap: 24px;
-    margin: 120px 0;
 }
 .features {
     padding: 120px 0;
